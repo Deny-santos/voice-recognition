@@ -1,10 +1,12 @@
-// logica do whatsapp
-const wts = document.querySelector(".img")
+// logica do menu bars
+const bars = document.querySelector(".btn-menu")
 
+function toggle(){
+    const nav = document.querySelector(".nav")
+    nav.classList.toggle("true")
+}
 
-
-
-
+bars.addEventListener("click", toggle)
 
 
 // logica dos butoes de lingas
@@ -22,7 +24,7 @@ opt1.addEventListener("click", () => {
     opt2.classList.remove("active")
     opt3.classList.remove("active")
     opt1.classList.add("active")
-    h1.innerHTML = "FALE EM PORTUGUS"
+    h1.innerHTML = "FALE EM PORTUGUÊS"
     lingua = "pt-BR"
 })
 
